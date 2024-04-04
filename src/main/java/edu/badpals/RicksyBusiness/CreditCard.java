@@ -10,6 +10,18 @@ public class CreditCard {
         this.number = number;
     }
 
+    public String number() {
+        return number;
+    }
+
+    public double credit() {
+        return credit;
+    }
+
+    public String cardOwner() {
+        return owner;
+    }
+
     @Override
     public String toString() {
         return "owner:" + owner + '\n' +
