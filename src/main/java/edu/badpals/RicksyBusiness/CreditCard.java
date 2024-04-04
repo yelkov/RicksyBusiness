@@ -4,6 +4,7 @@ public class CreditCard {
     private String owner = "";
     private String number = "";
     private double credit = 3000d;
+    private final String SYMBOL = "EZI";
 
     public CreditCard(String owner, String number) {
         this.owner = owner;
@@ -18,6 +19,10 @@ public class CreditCard {
         return credit;
     }
 
+    public void setCredit(double credit) {
+        this.credit = credit;
+    }
+
     public String cardOwner() {
         return owner;
     }
@@ -26,6 +31,6 @@ public class CreditCard {
     public String toString() {
         return "owner:" + owner + '\n' +
                 "number:" + number + '\n' +
-                "credit:" + credit + "EZI" + '\n';
+                "credit:" + credit + SYMBOL + '\n';
     }
 }
