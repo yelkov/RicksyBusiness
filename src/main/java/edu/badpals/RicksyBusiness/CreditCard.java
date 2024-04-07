@@ -33,11 +33,15 @@ public class CreditCard implements PaymentMethod {
     public String toString() {
         return "owner:" + owner + '\n' +
                 "number:" + number + '\n' +
-                "credit:" + credit + SYMBOL + '\n';
+                "credit:" + credit + SYMBOL;
     }
 
     @Override
     public void pay(int i) {
+        if(credit < i){
+            setCredit(0.0);
+        }else{
         setCredit(credit() - i);
+    }
     }
 }
