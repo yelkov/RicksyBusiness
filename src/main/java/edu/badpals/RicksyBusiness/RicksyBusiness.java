@@ -50,7 +50,7 @@ public class RicksyBusiness {
         // Abradolph quiere reservar otro ovni.
         // El sistema detecta que ya tiene uno
         // e ignora la petición.
-/**
+
         System.out.println("\nAbradolph quiere otro ovni\n" +
                 "==========================");
         ufosPark.dispatch(abradolph);

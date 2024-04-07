@@ -15,13 +15,15 @@ public class UfosPark implements GuestDispatcher{
 
     @Override
     public void dispatch(CreditCard creditCard) {
-        for (Map.Entry<String, String> entry: flota.entrySet()){
-            if(entry.getValue() == ""){
-                this.flota.replace(entry.getKey(), creditCard.number());
-                creditCard.setCredit(creditCard.credit() - fee);
-                break;
-            }else{
-                ;
+        if (!containsCard(creditCard.number())){
+            for (Map.Entry<String, String> entry: flota.entrySet()){
+                if(entry.getValue() == ""){
+                    this.flota.replace(entry.getKey(), creditCard.number());
+                    creditCard.setCredit(creditCard.credit() - fee);
+                    break;
+                }else{
+                    ;
+        }
             }
         }
     }
