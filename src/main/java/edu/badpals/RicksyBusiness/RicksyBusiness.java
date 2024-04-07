@@ -163,7 +163,7 @@ public class RicksyBusiness {
         gearHead.pay(3000); // no tiene crédito
         receptivo.dispatch(gearHead);
         mostrarReserva(gearHead, packExpender, ufosPark);
-/*
+
         // Birdpearson es recibido en la fiesta
 
         System.out.println("\nLLega Birdpearson!\n" +
