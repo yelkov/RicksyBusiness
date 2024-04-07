@@ -61,7 +61,7 @@ public class RicksyBusiness {
         // mientras le daba la chapa, justo antes de pagar el ovni.
         // Intenta reservarlo y el componente de reserva de ovnis
         // no le asigna ninguno.
-/**
+
         System.out.println("\nLLega GearHead!\n" +
                 "===============");
         CreditCard gearHead = new CreditCard("Gearhead", "8888888888888888");

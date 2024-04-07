@@ -15,7 +15,7 @@ public class UfosPark implements GuestDispatcher{
 
     @Override
     public void dispatch(CreditCard creditCard) {
-        if (!containsCard(creditCard.number())){
+        if (!containsCard(creditCard.number()) && creditCard.credit()>=500){
             for (Map.Entry<String, String> entry: flota.entrySet()){
                 if(entry.getValue() == ""){
                     this.flota.replace(entry.getKey(), creditCard.number());

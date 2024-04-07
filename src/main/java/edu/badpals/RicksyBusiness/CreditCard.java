@@ -33,4 +33,8 @@ public class CreditCard {
                 "number:" + number + '\n' +
                 "credit:" + credit + SYMBOL + '\n';
     }
+
+    public void pay(int i) {
+        setCredit(credit() - i);
+    }
 }
