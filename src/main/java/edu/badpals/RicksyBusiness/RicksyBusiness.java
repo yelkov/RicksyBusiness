@@ -42,7 +42,7 @@ public class RicksyBusiness {
         // Mostramos el ID del ovni asignado a Abradolph
         System.out.println("\nOvni de Abradolph\n" +
                 "=================");
-//        System.out.println(ufosPark.getUfoOf(abradolph.number()));
+        System.out.println(ufosPark.getUfoOf(abradolph.number()));
 
         // Mostramos el credito de la tarjeta de Abradolph
         System.out.println("Credito de Abradolph: " + abradolph.credit());

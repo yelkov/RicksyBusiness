@@ -19,14 +19,20 @@ public class UfosPark implements GuestDispatcher{
             if(entry.getValue() == ""){
                 this.flota.replace(entry.getKey(), creditCard.number());
                 creditCard.setCredit(creditCard.credit() - fee);
+                break;
             }else{
                 ;
             }
         }
     }
-    /*public String getUfoOf(String number){
-        return this.flota.
-    }*/
+    public String getUfoOf(String number){
+        for (Map.Entry<String, String> entry: flota.entrySet()){
+            if (entry.getValue()== number){
+                return entry.getKey();
+            }
+        }
+        return "null";
+    }
 
     @Override
     public String toString() {
@@ -43,5 +49,8 @@ public class UfosPark implements GuestDispatcher{
             numberList.add(value);
         }
         return numberList;
+    }
+    boolean containsCard(String number){
+        return this.flota.containsValue(number);
     }
 }
