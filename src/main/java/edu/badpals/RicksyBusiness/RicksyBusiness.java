@@ -74,7 +74,7 @@ public class RicksyBusiness {
 
         // Squanchy deja su ovni reservado
         // antes de irse a squanchear
-/**
+
         System.out.println("\nLLega Squanchy!\n" +
                 "==============");
         CreditCard squanchy = new CreditCard("Squanchy", "4444444444444444");
@@ -84,7 +84,7 @@ public class RicksyBusiness {
 
         // Morty quiere un ovni para huir de la fiesta
         // pero ya no queda ninguno disponible
-/**
+
         System.out.println("\nAlgun ovni para Morty?\n" +
                 "======================");
         CreditCard morty = new CreditCard("Morty", "0000000000000000");
