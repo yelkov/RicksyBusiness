@@ -1,6 +1,8 @@
 package edu.badpals.RicksyBusiness;
 
-public class CreditCard {
+import edu.badpals.RicksyBusiness.payment.PaymentMethod;
+
+public class CreditCard implements PaymentMethod {
     private String owner = "";
     private String number = "";
     private double credit = 3000d;
@@ -34,6 +36,7 @@ public class CreditCard {
                 "credit:" + credit + SYMBOL + '\n';
     }
 
+    @Override
     public void pay(int i) {
         setCredit(credit() - i);
     }

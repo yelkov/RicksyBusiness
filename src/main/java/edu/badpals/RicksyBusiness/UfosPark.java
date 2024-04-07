@@ -1,5 +1,7 @@
 package edu.badpals.RicksyBusiness;
 
+import edu.badpals.RicksyBusiness.payment.PaymentMethod;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -14,12 +16,12 @@ public class UfosPark implements GuestDispatcher{
     }
 
     @Override
-    public void dispatch(CreditCard creditCard) {
-        if (!containsCard(creditCard.number()) && creditCard.credit()>=500){
+    public void dispatch(PaymentMethod payment) {
+        if (!containsCard(payment.number()) && payment.credit()>=500){
             for (Map.Entry<String, String> entry: flota.entrySet()){
                 if(entry.getValue() == ""){
-                    this.flota.replace(entry.getKey(), creditCard.number());
-                    creditCard.setCredit(creditCard.credit() - fee);
+                    this.flota.replace(entry.getKey(), payment.number());
+                    payment.setCredit(payment.credit() - fee);
                     break;
                 }else{
                     ;
