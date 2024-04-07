@@ -35,7 +35,7 @@ public class UfosParkTest {
                             .toList());
             assertEquals(ovnis.length, cards.size(), 0);
         }
-/**
+
         @Test
         public void dispatchTest() {
             CreditCard card = new CreditCard("Abradolf Lincler", "4916119711304546");
@@ -49,7 +49,7 @@ public class UfosParkTest {
             assertEquals(1, cards.size(), 0);
             assertEquals(2500, card.credit(), 0);
         }
-
+/**
         @Test
         public void dispatchNoCreditTest() {
             CreditCard card = new CreditCard("Abradolf Lincler", "4916119711304546");
