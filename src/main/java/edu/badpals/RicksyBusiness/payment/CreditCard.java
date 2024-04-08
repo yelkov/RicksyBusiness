@@ -1,4 +1,4 @@
-package edu.badpals.RicksyBusiness;
+package edu.badpals.RicksyBusiness.payment;
 
 import edu.badpals.RicksyBusiness.payment.PaymentMethod;
 

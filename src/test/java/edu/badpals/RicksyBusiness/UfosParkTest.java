@@ -1,5 +1,6 @@
 package edu.badpals.RicksyBusiness;
 
+import edu.badpals.RicksyBusiness.payment.CreditCard;
 import org.junit.Before;
 import org.junit.Test;
 
