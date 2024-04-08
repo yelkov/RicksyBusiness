@@ -1,5 +1,7 @@
 package edu.badpals.RicksyBusiness;
 
+import edu.badpals.RicksyBusiness.payment.CreditCard;
+
 public class RicksyBusiness {
     public static void main( String[] args ) {
 /**       System.out.println();
