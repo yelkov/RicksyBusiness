@@ -2,6 +2,9 @@ package edu.badpals.RicksyBusiness;
 
 import edu.badpals.RicksyBusiness.payment.CreditCard;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RicksyBusiness {
     public static void main( String[] args ) {
 /**       System.out.println();
@@ -196,13 +199,20 @@ public class RicksyBusiness {
          * Muestra el total de pedidos y la lista de
          * invitados/as que han hecho un pedido.
          */
-
-        // tu código aquí
+        System.out.println("\nLlegan clientes que piden un rickmenú\n");
+        CreditCard[] clientes = {abradolph,squanchy,morty,gearHead,birdpearson};
+        RickMenu rickMenu = new RickMenu(clientes);
+        receptivo.registra(rickMenu);
+        for (CreditCard cliente : clientes){
+            receptivo.dispatch(cliente);
+        }
+        System.out.println(rickMenu);
     }
 
     private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
         System.out.println(card);
         System.out.println("Packs: " + expender.stock());
         System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
+
     }
 }
