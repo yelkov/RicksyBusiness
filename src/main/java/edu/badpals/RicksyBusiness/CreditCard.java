@@ -12,15 +12,15 @@ public class CreditCard implements PaymentMethod {
         this.owner = owner;
         this.number = number;
     }
-
+    @Override
     public String number() {
         return number;
     }
-
+    @Override
     public double credit() {
         return credit;
     }
-
+    @Override
     public void setCredit(double credit) {
         this.credit = credit;
     }
