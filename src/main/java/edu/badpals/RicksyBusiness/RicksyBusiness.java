@@ -173,7 +173,7 @@ public class RicksyBusiness {
         CreditCard birdpearson = new CreditCard("Birdpearson", "1111111111111111");
         receptivo.dispatch(birdpearson);
         mostrarReserva(birdpearson, packExpender, ufosPark);
-/*
+
         // Morty intenta reserver un ovni y un pack pero no quedan
 
         System.out.println("\nMorty quiere pack y ovni pero no quedan :(\n" +
