@@ -8,8 +8,13 @@ import java.util.Set;
 
 public class Receptivo {
     private Set<GuestDispatcher> observers = new HashSet<>();
+    private static Receptivo instance = new Receptivo();
 
-    public Receptivo() {
+    private Receptivo() {
+    }
+
+    public static Receptivo getReceptivo() {
+        return instance;
     }
 
     public void registra(GuestDispatcher guestDispatcher) {
